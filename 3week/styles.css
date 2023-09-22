@@ -9,7 +9,7 @@
 .item {
     background-color: purple;
     border-radius: 10px;
-    
+    box-shadow: 2px 2px 2px;
 }
 
 .item:nth-child(1) {
@@ -40,4 +40,71 @@
     background-color: darkblue;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.white {
+    font-size: 20px;
+    color: white;
+    margin-left: 95px;
+    margin-top: -75px;
+    opacity: 0.7;
+}
+
+.black {
+    font-size: 20px;
+    color: black;
+    margin-left: 95px;
+    margin-top: -75px;
+    opacity: 0.7;
+}
+
+.white2 {
+    font-size: 15px;
+    color: darkgray;
+    margin-left: 100px;
+    margin-top: -13px;
+    opacity: 0.3;
+}
+
+.black2 {
+    font-size: 15px;
+    color: gray;
+    margin-left: 100px;
+    margin-top: -13px;
+    opacity: 0.3;
+}
+
+.namew {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.nameb {
+    font-size: 20px;
+    color: black;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.mainw {
+    font-size: 15px;
+    color: white;
+    margin-left: 15px;
+    opacity: 0.3;
+}
+
+.mainb {
+    font-size: 15px;
+    color: black;
+    margin-left: 15px;
+    opacity: 0.3;
 }
