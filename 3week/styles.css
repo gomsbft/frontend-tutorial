@@ -1,3 +1,7 @@
+* {
+    font-family: 'Mooli', sans-serif;
+}
+
 .container {
     display: grid;
     width: 960px;
@@ -9,7 +13,7 @@
 .item {
     background-color: purple;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 0px 0px 0px 2px rgb(234, 229, 229);
 }
 
 .item:nth-child(1) {
@@ -47,6 +51,7 @@ img {
     height: 70px;
     margin: 10px;
     border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .white {
@@ -99,6 +104,7 @@ img {
     font-size: 15px;
     color: white;
     margin-left: 15px;
+    margin-right: 10px;
     opacity: 0.3;
 }
 
@@ -106,5 +112,6 @@ img {
     font-size: 15px;
     color: black;
     margin-left: 15px;
+    margin-right: 10px;
     opacity: 0.3;
 }
