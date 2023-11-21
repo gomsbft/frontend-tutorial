@@ -1,12 +1,17 @@
 let input = require("fs")
-  .readFileSync("input.txt")
+  .readFileSync("/dev/stdin")
   .toString()
   .trim()
   .split("\n");
 
-const [N, M] = input
-  .shift()
-  .split(" ")
-  .map((e) => +e);
+const [A, B] = input.map(e => +e);
 
-  console.log(N*M);
+if(A>B) {
+  alert('>');
+} else if(B>A) {
+  alert('<')
+} else if(A==B) {
+  alert('==')
+}
+
+
