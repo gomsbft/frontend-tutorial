@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="age.css">
+</head>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+</style>
+<body>
+    <main>
+      <div class="dday-form">
+        <h1 id="mainName">D-Day 계산기</h1>
+        <form action="" name="dday-form">
+          <fieldset class="box-line">
+            <input type="file" accept="image/*" id="imageUploader">
+            <div class="image-upload-box">
+              <span class="material-symbols-outlined icon-add">add</span>
+              <p>이미지 업로드</p>
+            </div>
+          </fieldset>
+          <fieldset class="box-line">
+            <legend class="capter-name">이름</legend>
+            <input type="text" placeholder="이름을 입력해주세요." id="name" class="input-box">
+          </fieldset>
+          <fieldset class="box-line">
+            <legend class="capter-name">생년월일</legend>
+            <input type="number" placeholder="YYYY" min="1900" max="2024" id="year" class="input-box">
+            <input type="number" placeholder="MM" min="1" max="12" id="month" class="input-box">
+            <input type="number" placeholder="DD" min="1" max="31" id="day" class="input-box">
+          </fieldset>
+          <fieldset class="box-line">
+            <legend class="capter-name">시간</legend>
+            <input type="number" placeholder="HH" min="1" max="24" id="hour" class="input-box">시
+            <input type="number" placeholder="MM" min="0" max="59" id="minute" class="input-box">분
+          </fieldset>
+          <button type="submit" class="submit-button">태어난 지 얼마나 됐을까?</button>
+        </form>
+      </div>
+      <div class="profile-info hide">
+        <div class="profile-info__image">
+          <img src="wallpaper-image.jpeg" alt="">
+        </div>
+        <div>
+          <div class="profile-detail">
+            <h2>이형진</h2>
+            <div class="profile-detail-date">
+              <p class="birthday">1996.10.13</p>
+              <p class="birth-time">12시 35분</p>
+            </div> 
+          </div>
+          <div>
+            <p class="introduction">당신이 살아온 시간은?</p>
+            <ul class="profile-date-list">
+              <li class="time-element year-time"></li>
+              <li class="time-element month-time"></li>
+              <li class="time-element day-time"></li>
+              <li class="time-element hour-time"></li>
+              <li class="time-element minute-time"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="age.js"></script>
+</body>
+</html>
+

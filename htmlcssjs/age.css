@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+}
+
+.dday-form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    background-color: white;
+    border-radius: 1rem;
+    align-items: center;
+    border: 0.1rem solid;
+    padding: 3rem;
+}
+
+.hide {
+    display: none !important;
+}
+
+#mainName {
+    padding: 0;
+}
+
+.box-line {
+    border: none;
+    margin-top: 2rem;
+}
+
+.box-line:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+#imageUploader {
+    display: none;
+}
+
+.image-upload-box {
+    width: 10rem;
+    height: 10rem;
+    border: 2px dotted rgb(53, 41, 2);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.image-upload-box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.input-box {
+    border-radius: 1rem;
+    border-color: darkgray;
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    padding: .3rem .6rem;
+}
+
+#year {
+    width: 5rem;
+}
+
+#month, #day, #hour, #minute {
+    width: 4rem;
+    margin-left: 0.5rem;
+}
+
+#hour, #minute {
+    margin-right: .4rem;
+}
+
+.capter-name {
+    font-size: 1rem;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 17rem;  
+    height: 3rem; 
+}
+
+.profile-info {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.profile-info__image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.profile-info__image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-detail-date {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.introduction {
+    font-weight: bold;
+    color: tomato;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.profile-date-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.time-element {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color:rgb(53, 41, 2);
+    color: rgb(252, 203, 2);
+}

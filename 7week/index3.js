@@ -1,4 +1,10 @@
-let str = 'hello';
+function checkSpam(str) {
+    let tempStr = str.toLowerCase();
+    tempStr.includes('xxx');
+    tempStr.includes('viagra');
+    
+}
 
-console.log(str.toUpperCase());
-
+checkSpam('buy ViAgRA now') == true;
+checkSpam('free xxxx') == true;
+checkSpam('innocent rabbit') == false;

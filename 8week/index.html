@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+	  <meta charset="utf-8">
+	  <title>애플 연혁</title>
+		<link rel="stylesheet" href="./styles2.css">
+  </head>
+  <body>
+		<header>
+			<ul>
+				<li>애플 제품</li>
+				<li>애플 연혁</li>
+				<li>애플에 대하여</li>
+			</ul>
+		</header>
+		<main>
+			<hr>
+			<h1>애플 연혁에 대하여</h1>
+			<figure>
+				<img src="./stevejobs.png" alt="">
+				<figcaption>애플과 스티브잡스</figcaption>
+			</figure>
+			<section>
+				<h2>애플의 연혁.</h2>
+				<ul>
+					<li class="history"><b class="newHistory">1976년</b> - 스티브 잡스, 워즈니악, 웨인 등과 애플 공동 창업</li>
+					<li class="history"><b class="newHistory">1977년</b> - PC 대중화 연 '애플2' 출시</li>
+					<li class="history"><b class="newHistory">1980년</b> - 기업 공개</li>
+					<li class="history"><b class="newHistory">1982년</b> - 세계 PC 업체 최초 연 매출 10억 달러 돌파</li>
+					<li class="history"><b class="newHistory">1984년</b> - 맥킨토시 출시</li>
+					<li class="history"><b class="newHistory">1985년</b> - 잡스, 존 스컬리 CEO와의 불화로 퇴사</li>
+					<li class="history"><b class="newHistory">1991년</b> - 세계 최초 경량화된 노트북 '파워북' 출시</li>
+					<li class="history"><b class="newHistory">1997년</b> - 3년 연속 적자, 잡스 임시 CEO로 복귀</li>
+					<li class="history"><b class="newHistory">1998년</b> - 아이맥 돌풍으로 흑자 전환</li>
+					<li class="history"><b class="newHistory">2000년</b> - 스티브 잡스, 정식 CEO 취임</li>
+					<li class="history"><b class="newHistory">2001년</b> - MP3 플레이어 '아이팟' 출시</li>
+					<li class="history"><b class="newHistory">2003년</b> - 아이튠스 뮤직스토어 서비스 시작</li>
+					<li class="history"><b class="newHistory">2007년</b> - 스마트폰 '아이폰' 출시</li>
+					<li class="history"><b class="newHistory">2010년</b> - 태블릿 PC '아이패드' 출시</li>
+				</ul>
+			</section>
+			<section>
+				<h2>스티브 잡스 명언 모음</h2>
+				<p>시간이 없습니다. 누군가를 위해 당신의 삶을 버리지 마세요.</p>
+				<p>세상을 바꿀 수 있다고 생각하는 제대로 정신 나간 사람들이 세상을 변화시킨다.</p>
+				<p>어제를 뒤돌아보는 건 그만하자. 그 대신 내일을 발전시켜 나가자.</p>
+			</section>
+			<hr>
+		</main>
+		<footer id="Footer">
+			<button type="button" id="topButton">Top</button>
+			<p>Copyright © 2023 Apple Inc. All rights reserved.</p>
+			<a href="https://www.apple.com">애플 페이지로 이동합니다.</a>
+		</footer>
+		<script src="index.js">
+			// history class 안에 있는 모든 b 태그의 색깔을 green으로 바꿔보자const all = document.querySelectorAll('.history');
+			const all = document.querySelectorAll('.newHistory');
+
+			all.forEach((element) => element.style.color = 'green' );		
+		</script>
+  </body>
+</html>

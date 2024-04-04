@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .clipboard {
+    position: relative;
+  }
+
+  .balloon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: purple;
+    color: #fff;
+    top: 40px;
+  }
+
+  .balloon.hidden {
+    display: none;
+  }
+
+  .balloon::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid purple;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+</style>
+<body>
+  <div class="clipboard">
+    <input type="text" id="cutEvent" placeholder="클립보드에 잘라내기 해보세요" value="Hello world">
+    <span class="clipboard-text">클립보드 복사</span>
+    <div class="balloon hidden">클립보드에 <span></span> 되셨습니다.</div>
+  </div>
+  <script>
+    const cutEvent = document.getElementById('cutEvent');
+    const copy = document.querySelector('.clipboard-text');
+    const balloon = document.querySelector('.balloon span');
+    const allBalloon = document.querySelector('.balloon');
+
+    cutEvent.addEventListener('cut' , function(event) {
+        // balloon html 태그 span안에 있는 텍스트를 잘라내기로 바꿔줘야겠다.
+				// balloon이 css가 hidden이라서 안보이네? => 보여줘야지
+        balloon.innerText = '어쩌구 저쩌구'
+        allBalloon.classList.remove('hidden');
+
+				setTimeout(function () {
+					allBalloon.classList.add('hidden');
+				}, 2000);
+    })
+    copy.addEventListener('copy' , function(event) {
+
+    });
+    
+  </script>
+</body>
+</html>
